@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="lesson.css">
+    <link rel="stylesheet" href="responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учебный ресторан - вебинар Альтаира</title>
+    <meta name="description" content="Ресторан: расчет заказа, статья и проверка содержания статьи">
+</head>
+<body>
+    <div class="header" id="home">
+        <div class="container">
+            <div class="header-line">
+                <div class="logo">
+                    <img src="LOGO.png" alt="Логотип">
+                </div>
+
+                <div class="header-buttons">
+                    <a href="#home" class="button">Главная</a>
+                    <a href="#menu" class="button">Меню</a>
+                    <a href="#about" class="button">О нас</a>
+                    <a href="#booking" class="button">Бронь</a>
+
+                    <a href="#" class="cart"><img src="cart.png" alt="cart"></a>
+                
+                    <div class="phone">
+                    <div class="number">
+                        <img src="phone.png" alt="Телефона">
+                        <a href="tel:+9998887654">+999-888-76-54</a>
+                    </div>
+                    <div class="phone-desc">
+                        Свяжитесь с нами для<br>бронирования
+                    </div>
+                </div>
+                </div>
+
+                
+
+                <div class="btn">
+                    <a href="#booking">ЗАКАЗ СТОЛИКА</a>
+                </div>
+
+            </div>
+
+
+            <div class="header-bottom">
+                <div class="header-bottom-text">
+                    Добро пожаловать в<br><span class="header-subtitle">Наш ресторан</span>
+                </div>
+
+                <div class="header-placeholder">
+                    ДОМ ЛУЧШЕЙ ЕДЫ
+                </div>
+
+                <div class="bottom-button">
+                    <a  href="#menu" class="bottom-btn">VIEW MENU</a>
+                </div>
+            </div>
+
+            
+        </div>
+
+        
+    </div>
+    <div class="cards" id="menu">
+            <div id="card" class="card">
+                <img src="card.png" alt="card">
+                <div class="card-text">Магическая <span>Атмосфера</span></div>
+                <div class="card-desc">В нашем заведении царит магическая атмосфера наполненная вкусными ароматами</div>
+            </div>
+
+            <div class="card">
+                <img src="card.png" alt="card">
+                <div class="card-text">Лучшее качество <span>Еды</span></div>
+                <div class="card-desc">Качество нашей Еды - отменное!</div>
+            </div>
+
+            <div class="card">
+            <img src="card.png" alt="card">
+            <div class="card-text">Недорогая <span>Еда</span></div>
+            <div class="card-desc">Стоимость нашей Еды зависит только от ее количества. Качество всегда на высоте!</div>
+        </div>
+    </div>
+
+
+    <main class="lesson-content">
+        <section id="about" class="lesson-section">
+            <h1>Делаем ресторан интерактивным</h1>
+            <button id="toggle-description" type="button"
+                    aria-expanded="false"
+                    aria-controls="restaurant-description">
+                Показать описание
+            </button>
+            <p id="restaurant-description" class="hidden">
+                Здесь можно выбрать блюда и рассчитать учебный заказ.
+            </p>
+        </section>
+
+        <section id="booking" class="lesson-section">
+            <h2>Учебный заказ</h2>
+            <p>Порция стоит 500 руб. От трёх порций скидка 10%.</p>
+            <form id="order-form" novalidate>
+                <div class="form-row">
+                <label for="guest-name">Имя гостя</label>
+                <input id="guest-name" name="guestName" type="text"
+                        placeholder="Придумайте имя" required>
+                </div>
+                <div class="form-row">
+                <label for="portion-count">Количество порций</label>
+                <input id="portion-count" name="portionCount"
+                        type="number" min="1" max="10" step="1"
+                        value="1" required>
+                </div>
+                <p id="order-total" aria-live="polite">Итого: пока не рассчитано.</p>
+                <button type="submit">Проверить учебный заказ</button>
+                <p id="form-status" aria-live="polite"></p>
+            </form>
+        </section>
+
+
+        <section class="lesson-section" id="articles">
+            <h2>Рецепты нашей кухни</h2>
+            <p id="release-note">Первая статья на сайте</p>
+            <p>
+                <a href="./article.html">Почитать статью</a>
+                <a href="./create.html">Написать свой рецепт</a>
+            </p>
+            <a href="https://www.gastronom.ru/">
+                <img src="./bg-image.png" class="recipe-photo" alt="Уютный ресторан">
+            </a>
+
+        </section>
+    </main>
+
+    
+
+    <script src="main.js"></script>
+</body>
+</html>

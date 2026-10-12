@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Черновик</title>
+    <meta name="description" content="Проверка черновика статьи.">
+    <link rel="stylesheet" href="./article.css">
+    <script src="./article.js" defer></script>
+</head>
+<body class="page">
+    <nav aria-label="Основная навигация">
+        <a href="./index.html">Главная</a>
+        <a href="./article.html">Статья</a>
+        <a href="./create.html">Черновик</a>
+    </nav>
+
+    <button id="theme-toggle" type="button" aria-pressed="false">Темная тема</button>
+
+
+    <main>
+        <h1>Проверить настройку статьи</h1>
+        <p>Проверьте данные в браузере</p>
+
+        
+
+        <form id="article-form" novalidate>
+            <div class="form-row">
+                <label for="author">Автор</label>
+                <input id="author" name="author" type="text" required>
+            </div>
+
+            <div class="form-row">
+                <label for="article-title">Название</label>
+                <input id="article-title" name="title" type="text" required>
+            </div>
+
+            <div class="form-row">
+                <label for="article-content">Содержание</label>
+                <textarea id="article-content" name="content" type="content" required></textarea>
+            </div>
+
+            <div class="form-row">
+                <label for="publised-at">Дата и время</label>
+                <input id="publised-at" name="publisedAt" type="datetime-local" required>
+            </div>
+
+            <button type="submit">Проверить</button>
+            <p id="article-status" role="status"></p>
+        </form>
+
+
+    </main>
+</body>
+</html>

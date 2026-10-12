@@ -1,0 +1,158 @@
+:root { 
+    --page-bg: #faf7ef; 
+    --surface: #ffffff; 
+    --ink: #512b00; 
+    --accent: #ff9100; 
+    --line: #d7e1d9; 
+    --button-ink: #fff; 
+
+}
+
+* { 
+    box-sizing: border-box;
+}
+
+body.page { 
+    font: "Segoe UI", sans-serif;
+    margin: 0 auto;
+    max-width: 1080px;
+    padding: 24px;
+    background: var(--page-bg);
+    color: var(--ink);
+}
+
+.page main { 
+    border-radius: 24px;
+    padding: clamp(24px, 5vw, 56px);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    box-shadow: 0 16px 48px #25140115;
+}
+
+.page h1 { 
+    font: 400 ;
+}
+
+.page h2 { 
+    font: 400;
+}
+
+.page nav { 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.page > nav { 
+    padding: 12px 0 24px;
+    font-weight: 600;
+}
+
+.page a { 
+    color: var(--accent);
+    text-underline-offset: 5px;
+}
+
+.page main nav { 
+    padding: 16px;
+    background: var(--page-bg);
+    border-radius: 12px;
+}
+
+.page section { 
+    margin: 36px 0 ;
+    padding-top: 12px;
+    border-top: 1px solid var(--line);
+}
+
+.recipe-photo { 
+    width: 100% ;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 24px;
+
+}
+
+img { 
+    max-width: 100%;
+    height: auto;
+}
+
+p, h1, h2 { 
+    overflow-wrap: anywhere ;
+}
+
+
+
+.form-row { 
+    display: grid;
+    grid-template-columns: 150px minmax(0, 1fr);
+    gap: 16px;
+    margin: 20px 0;
+}
+
+input, textarea, button { 
+    font: inherit;
+}
+
+input, textarea { 
+    width: 100%;
+    min-width: 0;
+    padding: 12px 14px;
+    border: 1px solid var(--line) ;
+    border-radius: 10px;
+    background: var(--page-bg);
+    color: var(--ink);
+}
+
+textarea { 
+    min-height: 160px;
+    resize: vertical;
+}
+
+button { 
+    padding: 12px 22px;
+    border: 0px;
+    border-radius: 10px;
+
+    background: var(--accent);
+    color: var(--button-ink);
+
+    cursor: pointer;
+}
+
+
+button:hover { 
+    filter: brightness(1.15);
+}
+
+.page > button { 
+    display: block;
+    margin: 0 0 16px auto;
+}
+
+input:focus, textarea:focus { 
+    color: var(--accent);
+}
+
+:focus-visible { 
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+}
+
+#artice-status { 
+    min-height: 2em;
+    overflow-wrap: anywhere;
+}
+
+
+body.page.dark { 
+    color-scheme: dark;
+    --page-bg: #112e25; 
+    --surface: #1b3a30; 
+    --ink: #d48428; 
+    --accent: #ff9100; 
+    --line: #45675a; 
+    --button-ink: #173a2c; 
+}

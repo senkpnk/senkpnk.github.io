@@ -1,0 +1,299 @@
+body { 
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+}
+
+.header-line { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container { 
+
+    padding: 50px 165px ;
+}
+
+.header { 
+    background-image: url(bg-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+}
+
+.header-buttons { 
+    display: flex;
+    align-items: center;
+}
+
+.button { 
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+
+    margin-right: 23px;
+    transition: 1s;
+}
+
+.phone { 
+    padding-left: 30px;
+    border-left: 1px solid white;
+}
+
+.number { 
+    display: flex;
+    align-items: center;
+}
+
+.number a  { 
+    margin-left: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.number a:hover { 
+    color: #FF7400;
+}
+
+.cart { 
+    margin-right: 30px;
+}
+
+.phone-desc { 
+    margin-top: 5px;
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+.btn a { 
+    padding: 18px 14px;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #FF7400;
+}
+
+.button:hover { 
+    color: #FF7400;
+}
+
+.btn { 
+    transition: 1s;
+}
+
+.btn:hover { 
+    transform: translateY(-5px);
+}
+
+
+.header-bottom {
+    position: absolute;
+    top: 430px;
+    left: 300px;
+    text-align: center;
+}
+
+
+.header-bottom-text { 
+    color: #FF7400;
+    font-family: "Tinos", serif;
+    font-size: 50px;
+    font-weight: 400;
+
+    margin-bottom: 12px;
+
+}
+
+.header-bottom-text span { 
+    font-size: 80px;
+}
+
+.header-placeholder { 
+    position: relative;
+    color: white;
+}
+.header-placeholder::after { 
+    left: 344px;
+    top: 10px;
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 1px;
+    background-color: white;
+}
+
+.header-placeholder::before {
+    left: 36px;
+    top: 10px;
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 1px;
+    background-color: white;
+}
+
+
+.bottom-button { 
+    margin-top: 41px;
+    transition: 1s;
+
+}
+
+.bottom-btn { 
+
+    padding: 14px 28px;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #FF7400;
+}
+
+.bottom-button:hover { 
+    transform: translateY(-5px);
+}
+
+
+
+
+.cards { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
+    gap: 40px;
+}
+
+.card { 
+    text-align: center;
+    width: 15%;
+    box-shadow: 0px 0px 20px #0000001A;
+    font-family: "Tinos", serif;
+    height: 300px;
+    padding: 20px 43px;
+    background-color: white;
+}
+
+.card-text { 
+    font-size: 26px;
+    font-weight: 400;
+
+    margin-bottom: 20px;
+}
+
+.card-text span { 
+    color: #FF7400;
+}
+
+.card-desc { 
+    font-weight: 400;
+    font-size: 26px;
+    color: #656363;
+}
+
+
+
+
+.hidden { 
+    display: none;
+}
+
+.active { 
+    border: 20px solid yellow;
+    transform: scale(2);
+}
+
+.lesson-content { max-width: 1000px; margin: 60px auto; padding: 0 20px; }
+.lesson-section { margin-bottom: 48px; }
+.lesson-content button { padding: 12px 18px; background: #ff7400; color: #161616; border: 1px solid #a34300; font: inherit; cursor: pointer; }
+.lesson-content button:hover { background: #ff9a46; }
+.lesson-content input { width: 100%; padding: 10px; border: 2px solid #777; font: inherit; }
+.lesson-content .error { border-color: #b00020; }
+.error-message { color: #b00020; min-height: 1.5em; margin: 4px 0; }
+#form-status { min-height: 1.5em; }
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+.cards {
+  max-width: 1200px;
+  margin: -70px auto 0;
+  padding: 0 20px;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 24px;
+}
+
+.card {
+  width: auto;
+  flex: 1 1 250px;
+  min-width: 0;
+  height: auto;
+  padding: 24px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.form-row label {
+  flex: 0 0 180px;
+}
+
+.form-row input {
+  flex: 1;
+  min-width: 0;
+  padding: 10px;
+}
+
+.lesson-content :focus-visible {
+  outline: 3px solid #004ca3;
+  outline-offset: 3px;
+}
+
+
+
+
+
+
+.recipe-photo { 
+    width: 100% ;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 24px;
+
+}
+
+img { 
+    max-width: 100%;
+    height: auto;
+}
+
+.lesson-section p a { 
+    padding: 14px 28px;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #FF7400;
+}
